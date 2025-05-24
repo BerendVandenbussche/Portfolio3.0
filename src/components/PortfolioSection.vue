@@ -1,11 +1,13 @@
 <script setup lang="ts">
-
+defineProps({
+  sectionTitle: String,
+});
 </script>
 
 <template>
-  <div class="h-screen"><slot></slot></div>
+  <div :id="sectionTitle" class="h-screen p-4">
+    <slot></slot>
+  </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

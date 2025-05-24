@@ -6,29 +6,37 @@ const navigationItems = ["Home", "About", "Skills", "Homelab", "Contact"];
 </script>
 
 <template>
-  <router-view>
+  <div>
     <portfolio-section
-      :id="navigationItems[0]"
-      class="bg-background-darkest text-white"
+      v-for="(navigationItem, index) in navigationItems"
+      :key="index"
+      :section-title="navigationItem"
+      :class="index % 2 === 0 ? 'bg-darkest text-white' : 'bg-dark text-white'"
     >
-      <header>
-        <nav>
-          <ul class="flex justify-center">
-            <NavItem
-              v-for="navigationItem of navigationItems"
-              :title="navigationItem"
-            />
-          </ul>
-        </nav>
-      </header>
-      <main></main>
-    </portfolio-section>
-    <portfolio-section
-      :id="navigationItems[1]"
-      class="bg-background-dark text-white"
-    >
-    </portfolio-section>
-  </router-view>
-</template>
+      <template v-if="index === 0">
+        <header>
+          <nav>
+            <div
+              class="absolute top-2 left-2 flex justify-center items-center w-12 h-12 rounded-lg bg-theme font-bold"
+            >
+              <p>BV.</p>
+            </div>
+            <ul class="flex justify-center">
+              <NavItem
+                v-for="navItem in navigationItems"
+                :key="navItem"
+                :title="navItem"
+              />
+            </ul>
+          </nav>
+        </header>
+        <main></main>
+      </template>
 
-<style scoped></style>
+      <template v-if="index === 1">
+        <h1 class="font-bold text-theme">About me</h1>
+      </template>
+    </portfolio-section>
+    <footer></footer>
+  </div>
+</template>
