@@ -3,6 +3,7 @@ import NavItem from "@/components/navigation/NavItem.vue";
 import PortfolioSection from "@/components/PortfolioSection.vue";
 import ContactItem from "@/components/contact/ContactItem.vue";
 import HomeSectionTemplate from "@/components/sectionTemplates/HomeSectionTemplate.vue";
+import AboutSectionTemplate from "@/components/sectionTemplates/AboutSectionTemplate.vue";
 
 const navigationItems = ["Home", "About", "Skills", "Homelab", "Contact"];
 </script>
@@ -36,7 +37,7 @@ const navigationItems = ["Home", "About", "Skills", "Homelab", "Contact"];
       </template>
 
       <template v-if="index === 1">
-        <h1 class="text-theme">About me</h1>
+        <AboutSectionTemplate />
       </template>
 
       <template v-if="index === 2">
