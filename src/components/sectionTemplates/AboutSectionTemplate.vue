@@ -15,6 +15,25 @@
       <p>🚘: B license</p>
       <p>💻: MacOS & EndeavourOS</p>
     </div>
+    <div class="pt-12">
+      My journey in tech began in high school, where I explored Multimedia,
+      gaining proficiency in the Adobe software suite and foundational HTML &
+      CSS. I then pursued a Bachelor's degree in Media and Communication
+      Technologies at Howest, specializing in Web & App Development. While this
+      program prepared me as a full-stack developer, my primary passion and
+      expertise lie in frontend development. That said, I'm always keen to
+      expand my skillset and am open to learning new technologies.<br /><br />
+      Speaking of passions, it might seem contradictory given my general disdain
+      for traditional printers, but 3D printing is a serious hobby of mine!
+      Beyond printing, I also enjoy managing my homelab, which includes a
+      Raspberry Pi running Home Assistant and Immich. Find more details about my
+      homelab
+      <router-link class="underline" to="#Homelab">here.</router-link>
+      <br /><br />
+      Currently, I'm applying this passion as an Open Source Consultant -
+      Frontend Developer at
+      <a class="underline" href="https://inuits.eu" target="_blank">Inuits</a>.
+    </div>
   </div>
 </template>
 
