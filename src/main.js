@@ -2,6 +2,7 @@ import "./assets/main.css";
 
 import { createApp } from "vue";
 import { createWebHistory, createRouter } from "vue-router";
+import VueFeather from "vue-feather";
 import App from "./App.vue";
 
 const routes = [{ path: "/", component: App }];
@@ -25,4 +26,4 @@ const router = createRouter({
   },
 });
 
-createApp(App).use(router).mount("#app");
+createApp(App).use(router).component(VueFeather.name, VueFeather).mount("#app");

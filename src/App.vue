@@ -1,17 +1,18 @@
 <script setup>
 import NavItem from "@/components/navigation/NavItem.vue";
 import PortfolioSection from "@/components/PortfolioSection.vue";
+import ContactItem from "@/components/contact/ContactItem.vue";
 
 const navigationItems = ["Home", "About", "Skills", "Homelab", "Contact"];
 </script>
 
 <template>
-  <div>
+  <div class="bg-dark">
     <portfolio-section
       v-for="(navigationItem, index) in navigationItems"
       :key="index"
       :section-title="navigationItem"
-      :class="index % 2 === 0 ? 'bg-darkest text-white' : 'bg-dark text-white'"
+      :class="[index % 2 === 0 ? 'bg-darkest' : 'bg-dark', 'text-white']"
     >
       <template v-if="index === 0">
         <header>
@@ -30,13 +31,42 @@ const navigationItems = ["Home", "About", "Skills", "Homelab", "Contact"];
             </ul>
           </nav>
         </header>
-        <main></main>
+        <section>
+          <div class="w-full h-full flex justify-center py-12">
+            <div class="w-fit">
+              <img
+                src="/images/MeBlob.png"
+                alt="A blue colored blob with a picture of myself"
+              />
+              <div class="mx-12 -mt-24">
+                <h1 class="text-4xl">
+                  Berend<br />
+                  Vandenbussche
+                </h1>
+                <h2 class="font-normal">Frontend developer</h2>
+              </div>
+            </div>
+          </div>
+        </section>
       </template>
 
       <template v-if="index === 1">
-        <h1 class="font-bold text-theme">About me</h1>
+        <h1 class="text-theme">About me</h1>
+      </template>
+
+      <template v-if="index === 2">
+        <h1 class="text-theme">Skills & projects</h1>
+      </template>
+
+      <template v-if="index === 3">
+        <h1 class="text-theme">Homelab</h1>
       </template>
     </portfolio-section>
-    <footer></footer>
+    <footer class="flex justify-center p-2">
+      <contact-item icon-name="mail" />
+      <contact-item icon-name="linkedin" />
+      <contact-item icon-name="facebook" />
+      <contact-item icon-name="github" />
+    </footer>
   </div>
 </template>

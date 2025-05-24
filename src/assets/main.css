@@ -6,3 +6,15 @@
     --color-darkest: #121212;
     --color-dark: #242121;
 }
+
+@layer base {
+    h1 {
+        font-size: var(--text-2xl);
+        font-weight: var(--font-weight-bold)
+    }
+
+    h2 {
+        font-size: var(--text-xl);
+        font-weight: var(--font-weight-bold)
+    }
+}
