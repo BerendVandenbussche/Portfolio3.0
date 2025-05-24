@@ -4,7 +4,7 @@
 <template>
   <header>
     <nav>
-      <ul>
+      <ul class="flex">
         <li>Home</li>
         <li>About</li>
         <li>Skills</li>
