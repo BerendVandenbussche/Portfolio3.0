@@ -5,11 +5,13 @@
 
     --color-darkest: #121212;
     --color-dark: #242121;
+
+    --color-darkest-see-trough: rgba(18, 18, 18, 0.9);
 }
 
 @layer base {
     h1 {
-        font-size: var(--text-2xl);
+        font-size: var(--text-3xl);
         font-weight: var(--font-weight-bold)
     }
 
