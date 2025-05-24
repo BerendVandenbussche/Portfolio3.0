@@ -1,23 +1,30 @@
 <script setup>
+import NavItem from "@/components/navigation/NavItem.vue";
+import PortfolioSection from "@/components/PortfolioSection.vue";
+
+const navigationItems = ["Home", "About", "Skills", "Homelab", "Contact"]
 </script>
 
 <template>
-  <header>
+  <portfolio-section class="bg-background-darkest text-white">
+    <header>
     <nav>
-      <ul class="flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Homelab</li>
-        <li>Contact</li>
+      <ul class="flex justify-center">
+        <NavItem v-for="navigationItem of navigationItems" :title="navigationItem"/>
+
       </ul>
     </nav>
 
-  </header>
+    </header>
+    <main>
 
-  <main>
+    </main>
+  </portfolio-section>
+  <portfolio-section class="bg-background-dark text-white">
 
-  </main>
+  </portfolio-section>
+
+
 </template>
 
 <style scoped>
