@@ -101,6 +101,7 @@ const technologies = [
         project-name="Elody"
         project-image="/images/projects/elody.svg"
         project-url="https://elody.eu"
+        github-url="https://github.com/inuits/elody-pwa"
       />
     </div>
   </div>

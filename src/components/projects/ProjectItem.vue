@@ -5,6 +5,7 @@ const props = defineProps({
   projectName: String,
   projectImage: String,
   projectUrl: String,
+  githubUrl: String,
 });
 
 const component = computed(() => {
@@ -20,8 +21,13 @@ const component = computed(() => {
     :href="projectUrl"
     target="_blank"
   >
-    <div class="bg-theme-see-trough p-4 rounded-t-3xl text-white">
+    <div
+      class="flex justify-between items-center bg-theme p-4 rounded-t-3xl text-white"
+    >
       <h3>{{ projectName }}</h3>
+      <a v-if="githubUrl" :href="githubUrl" target="_blank">
+        <vue-feather type="github" class="stroke-white" />
+      </a>
     </div>
     <div class="flex justify-center p-4">
       <img
