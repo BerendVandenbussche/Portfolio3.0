@@ -11,6 +11,7 @@
     "@tailwindcss/vite": "^4.1.7",
     "tailwindcss": "^4.1.7",
     "vue": "^3.5.13",
+    "vue-bubble-ui": "^1.0.3",
     "vue-feather": "^2.0.0",
     "vue-router": "^4.5.1"
   },

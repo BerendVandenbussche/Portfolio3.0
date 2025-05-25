@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-  <div :id="sectionTitle" class="min-h-screen p-4">
+  <div :id="sectionTitle" class="min-h-screen p-6">
     <slot></slot>
   </div>
 </template>

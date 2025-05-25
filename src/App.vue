@@ -4,6 +4,8 @@ import PortfolioSection from "@/components/PortfolioSection.vue";
 import ContactItem from "@/components/contact/ContactItem.vue";
 import HomeSectionTemplate from "@/components/sectionTemplates/HomeSectionTemplate.vue";
 import AboutSectionTemplate from "@/components/sectionTemplates/AboutSectionTemplate.vue";
+import HomeLabSectionTemplate from "@/components/sectionTemplates/HomeLabSectionTemplate.vue";
+import SkillsSectionTemplate from "@/components/sectionTemplates/SkillsSectionTemplate.vue";
 
 const navigationItems = ["Home", "About", "Skills", "Homelab"];
 </script>
@@ -15,7 +17,7 @@ const navigationItems = ["Home", "About", "Skills", "Homelab"];
         <div
           class="relative mr-[2rem] flex justify-center items-center w-12 h-12 rounded-lg bg-theme font-bold text-white"
         >
-          <p>BV.</p>
+          BV.
         </div>
         <ul class="flex justify-center">
           <NavItem
@@ -41,11 +43,11 @@ const navigationItems = ["Home", "About", "Skills", "Homelab"];
       </template>
 
       <template v-if="index === 2">
-        <h1 class="text-theme">Skills & projects</h1>
+        <SkillsSectionTemplate />
       </template>
 
       <template v-if="index === 3">
-        <h1 class="text-theme">Homelab</h1>
+        <HomeLabSectionTemplate />
       </template>
     </portfolio-section>
     <footer class="flex justify-center p-2">
