@@ -23,7 +23,7 @@
         Technologies at Howest, specializing in Web & App Development. While
         this program prepared me as a full-stack developer, my primary passion
         and expertise lie in frontend development. That said, I'm always keen to
-        expand my skillset and am open to learning new technologies.<br /><br />
+        expand my skillset and am open to learn new technologies.<br /><br />
         Speaking of passions, it might seem contradictory given my general
         disdain for traditional printers, but 3D printing is a serious hobby of
         mine! Beyond printing, I also enjoy managing my homelab, which includes
