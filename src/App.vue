@@ -5,15 +5,15 @@ import ContactItem from "@/components/contact/ContactItem.vue";
 import HomeSectionTemplate from "@/components/sectionTemplates/HomeSectionTemplate.vue";
 import AboutSectionTemplate from "@/components/sectionTemplates/AboutSectionTemplate.vue";
 
-const navigationItems = ["Home", "About", "Skills", "Homelab", "Contact"];
+const navigationItems = ["Home", "About", "Skills", "Homelab"];
 </script>
 
 <template>
-  <div class="bg-dark text-white">
+  <div class="bg-dark text-text">
     <header class="fixed top-0 bg-darkest-see-trough w-full">
       <nav class="flex justify-center items-center p-4">
         <div
-          class="relative mr-[2rem] flex justify-center items-center w-12 h-12 rounded-lg bg-theme font-bold"
+          class="relative mr-[2rem] flex justify-center items-center w-12 h-12 rounded-lg bg-theme font-bold text-white"
         >
           <p>BV.</p>
         </div>
@@ -30,7 +30,7 @@ const navigationItems = ["Home", "About", "Skills", "Homelab", "Contact"];
       v-for="(navigationItem, index) in navigationItems"
       :key="index"
       :section-title="navigationItem"
-      :class="[index % 2 === 0 ? 'bg-darkest' : 'bg-dark', 'text-white']"
+      :class="[index % 2 === 0 ? 'bg-darkest' : 'bg-dark', 'text-text']"
     >
       <template v-if="index === 0">
         <HomeSectionTemplate />

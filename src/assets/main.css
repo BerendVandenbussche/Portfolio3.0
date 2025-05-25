@@ -3,10 +3,16 @@
 @theme{
     --color-theme: #1C74FC;
 
+    --color-text: var(--color-white);
+
+    --color-lightest: #fff;
+    --color-light: #f4f4f4;
+
     --color-darkest: #121212;
     --color-dark: #242121;
 
     --color-darkest-see-trough: rgba(18, 18, 18, 0.9);
+    --color-lightest-see-trough: rgba(255, 255, 255, 0.9);
 }
 
 @layer base {
@@ -18,5 +24,14 @@
     h2 {
         font-size: var(--text-xl);
         font-weight: var(--font-weight-bold)
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-dark: var(--color-light);
+        --color-darkest: var(--color-lightest);
+        --color-darkest-see-trough: var(--color-lightest-see-trough);
+        --color-text: var(--color-black);
     }
 }

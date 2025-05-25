@@ -4,7 +4,7 @@ import NavItem from "@/components/navigation/NavItem.vue";
 
 <template>
   <section>
-    <div class="w-full h-full flex justify-center py-12">
+    <div class="w-full h-screen flex justify-center items-center py-12">
       <div class="w-fit">
         <img
           src="/images/MeBlob.png"
