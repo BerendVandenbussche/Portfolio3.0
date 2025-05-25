@@ -3,6 +3,7 @@ import { computed } from "vue";
 import { useNavigation } from "@/composables/useNavigation";
 import MenuItem from "@/components/menu/MenuItem.vue";
 import Logo from "@/components/Logo.vue";
+import LanguageSwitcher from "@/components/LanguageSwitcher.vue";
 
 const { getNavigationItems, toggleMobileMenu } = useNavigation();
 const navigationItems = computed(() => getNavigationItems());
@@ -18,6 +19,12 @@ const navigationItems = computed(() => getNavigationItems());
       v-for="(navigationItem, index) of navigationItems"
       :class="[index % 2 === 0 ? 'bg-darkest' : 'bg-dark']"
       :navigation-item="navigationItem"
+    />
+    <language-switcher
+      :class="[
+        'px-4 mt-auto py-2',
+        navigationItems.length % 2 === 0 ? 'bg-darkest' : 'bg-dark',
+      ]"
     />
   </div>
 </template>

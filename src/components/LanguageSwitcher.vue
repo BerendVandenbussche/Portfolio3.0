@@ -2,9 +2,11 @@
 import { useI18n } from "vue-i18n";
 import { onMounted, watch } from "vue";
 import { useBrowserStorage } from "@/composables/useBrowserStorage";
+import { useNavigation } from "@/composables/useNavigation";
 
 const { t, locale, availableLocales } = useI18n();
 const { getStorageItem, setStorageItem } = useBrowserStorage();
+const { isMobileMenuOpen, toggleMobileMenu } = useNavigation();
 
 onMounted(() => {
   const savedLanguage = getStorageItem("preferredLanguage");
@@ -15,6 +17,7 @@ watch(
   () => locale.value,
   () => {
     setStorageItem("preferredLanguage", locale.value);
+    if (isMobileMenuOpen) toggleMobileMenu();
   },
 );
 </script>
