@@ -6,28 +6,39 @@ import HomeSectionTemplate from "@/components/sectionTemplates/HomeSectionTempla
 import AboutSectionTemplate from "@/components/sectionTemplates/AboutSectionTemplate.vue";
 import HomeLabSectionTemplate from "@/components/sectionTemplates/HomeLabSectionTemplate.vue";
 import SkillsSectionTemplate from "@/components/sectionTemplates/SkillsSectionTemplate.vue";
+import { computed } from "vue";
+import Menu from "@/components/menu/Menu.vue";
+import { useNavigation } from "@/composables/useNavigation.js";
+import Logo from "@/components/Logo.vue";
 
-const navigationItems = ["Home", "About", "Skills", "Homelab"];
+const { getNavigationItems, toggleMobileMenu, isMobileMenuOpen } =
+  useNavigation();
+const navigationItems = computed(() => getNavigationItems());
 </script>
 
 <template>
   <div class="bg-darkest text-text">
     <header class="fixed top-0 bg-darkest-see-trough w-full">
-      <nav class="flex justify-center items-center p-4">
-        <div
-          class="relative mr-[2rem] flex justify-center items-center w-12 h-12 rounded-lg bg-theme font-bold text-white"
-        >
-          BV.
-        </div>
-        <ul class="flex justify-center">
+      <nav class="flex justify-between md:justify-center items-center p-4">
+        <Logo />
+        <ul class="hidden md:flex justify-center">
           <NavItem
             v-for="navItem in navigationItems"
             :key="navItem"
             :title="navItem"
           />
         </ul>
+        <button
+          class="cursor-pointer p-4 md:hidden"
+          @click="toggleMobileMenu()"
+        >
+          <vue-feather type="menu" stroke="#fff" />
+        </button>
       </nav>
     </header>
+    <transition>
+      <Menu v-if="isMobileMenuOpen" />
+    </transition>
     <portfolio-section
       v-for="(navigationItem, index) in navigationItems"
       :key="index"
@@ -58,3 +69,15 @@ const navigationItems = ["Home", "About", "Skills", "Homelab"];
     </footer>
   </div>
 </template>
+
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: transform 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  transform: translateX(-100%);
+}
+</style>
