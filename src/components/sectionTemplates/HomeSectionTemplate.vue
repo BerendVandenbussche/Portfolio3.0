@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import NavItem from "@/components/navigation/NavItem.vue";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
 </script>
 
 <template>
@@ -12,10 +14,10 @@ import NavItem from "@/components/navigation/NavItem.vue";
         />
         <div class="mx-12 -mt-24">
           <h1 class="text-4xl">
-            Berend<br />
-            Vandenbussche
+            {{ t("home.name") }}<br />
+            {{ t("home.surname") }}
           </h1>
-          <h2 class="font-normal">Frontend developer</h2>
+          <h2 class="font-normal">{{ t("home.position") }}</h2>
         </div>
       </div>
     </div>

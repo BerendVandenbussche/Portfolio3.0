@@ -1,0 +1,24 @@
+{
+  "home": {
+    "name": "Berend",
+    "surname": "Vandenbussche",
+    "position": "Frontend ontwikkelaar"
+  },
+  "about": {
+    "birthday": "28 februari 2000",
+    "phone": "+32 468 23 90 99",
+    "drivers-license": "Rijbewijs B",
+    "operating-systems": "MacOS & EndeavourOS",
+    "about-me-text-1": "Mijn reis in de technologie begon op de middelbare school, waar ik Multimedia verkende en vaardigheid opdeed in de Adobe software suite en de basis van HTML & CSS. Daarna volgde ik een Bachelor in Media en Communicatie Technologieën aan Howest, met een specialisatie in Web & App Development. Hoewel dit programma me voorbereidde als full-stack ontwikkelaar, ligt mijn primaire passie en expertise in frontend ontwikkeling. Dat gezegd hebbende, sta ik altijd te popelen om mijn vaardigheden uit te breiden en sta ik open voor het leren van nieuwe technologieën.",
+    "about-me-text-2": "Over passies gesproken, het lijkt misschien tegenstrijdig gezien mijn algemene afkeer van traditionele printers, maar 3D-printen is een serieuze hobby van mij! Naast printen geniet ik ook van het beheren van mijn homelab, dat een Raspberry Pi omvat die Home Assistant, Immich en enkele andere open-source projecten draait. Meer details over mijn homelab vind je",
+    "about-me-link-1": "hier.",
+    "about-me-text-3": "Momenteel pas ik deze passie toe als Open Source Consultant - Frontend Developer bij",
+    "about-me-link-2": "Inuits",
+    "hello": "Hallo, ik ben"
+  },
+  "skills": {
+  },
+  "homelab": {
+    "under-construction": "In aanbouw"
+  }
+}

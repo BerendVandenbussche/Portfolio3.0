@@ -10,6 +10,7 @@ import { computed } from "vue";
 import Menu from "@/components/menu/Menu.vue";
 import { useNavigation } from "@/composables/useNavigation.js";
 import Logo from "@/components/Logo.vue";
+import LanguageSwitcher from "@/components/LanguageSwitcher.vue";
 
 const { getNavigationItems, toggleMobileMenu, isMobileMenuOpen } =
   useNavigation();
@@ -27,6 +28,9 @@ const navigationItems = computed(() => getNavigationItems());
             :key="navItem"
             :title="navItem"
           />
+          <li>
+            <LanguageSwitcher />
+          </li>
         </ul>
         <button
           class="cursor-pointer p-4 md:hidden"

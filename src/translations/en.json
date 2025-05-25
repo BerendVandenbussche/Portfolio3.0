@@ -1,0 +1,24 @@
+{
+  "home": {
+    "name": "Berend",
+    "surname": "Vandenbussche",
+    "position": "Frontend developer"
+  },
+  "about": {
+    "birthday": "28 february 2000",
+    "phone": "+32 468 23 90 99",
+    "drivers-license": "B license",
+    "operating-systems": "MacOS & EndeavourOS",
+    "about-me-text-1": " My journey in tech began in high school, where I explored Multimedia, gaining proficiency in the Adobe software suite and foundational HTML & CSS. I then pursued a Bachelor's degree in Media and Communication Technologies at Howest, specializing in Web & App Development. While this program prepared me as a full-stack developer, my primary passion and expertise lie in frontend development. That said, I'm always keen to expand my skillset and am open to learn new technologies.",
+    "about-me-text-2": "Speaking of passions, it might seem contradictory given my general disdain for traditional printers, but 3D printing is a serious hobby of mine! Beyond printing, I also enjoy managing my homelab, which includes a Raspberry Pi running Home Assistant, Immich and some other open source projects. Find more details about my homelab",
+    "about-me-link-1": "here.",
+    "about-me-text-3": "Currently, I'm applying this passion as an Open Source Consultant - Frontend Developer at",
+    "about-me-link-2": "Inuits",
+    "hello": "Hello, I am"
+  },
+  "skills": {
+  },
+  "homelab": {
+    "under-construction": "Under construction"
+  }
+}

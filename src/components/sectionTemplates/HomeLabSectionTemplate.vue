@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
+</script>
 
 <template>
   <div>
@@ -9,7 +13,7 @@
         src="/images/construction.svg"
         alt="Under construction"
       />
-      <h2>Under construction</h2>
+      <h2>{{ t("homelab.under-construction") }}</h2>
     </div>
   </div>
 </template>
