@@ -17,7 +17,7 @@ watch(
   () => locale.value,
   () => {
     setStorageItem("preferredLanguage", locale.value);
-    if (isMobileMenuOpen) toggleMobileMenu();
+    if (isMobileMenuOpen.value) toggleMobileMenu();
   },
 );
 </script>
