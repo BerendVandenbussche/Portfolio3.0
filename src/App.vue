@@ -28,7 +28,7 @@ const navigationItems = computed(() => getNavigationItems());
             :key="navItem"
             :title="navItem"
           />
-          <li>
+          <li class="ml-12">
             <LanguageSwitcher />
           </li>
         </ul>

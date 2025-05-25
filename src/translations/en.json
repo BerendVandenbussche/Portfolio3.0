@@ -20,5 +20,9 @@
   },
   "homelab": {
     "under-construction": "Under construction"
+  },
+  "languages": {
+    "en": "English",
+    "nl": "Dutch"
   }
 }

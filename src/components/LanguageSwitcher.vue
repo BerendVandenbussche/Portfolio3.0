@@ -7,7 +7,7 @@ const { t, locale, availableLocales } = useI18n();
 const { getStorageItem, setStorageItem } = useBrowserStorage();
 
 onMounted(() => {
-  const savedLanguage = localStorage.getItem("preferredLanguage");
+  const savedLanguage = getStorageItem("preferredLanguage");
   if (savedLanguage) locale.value = savedLanguage;
 });
 
@@ -22,7 +22,7 @@ watch(
 <template>
   <select v-model="locale">
     <option v-for="localeOption of availableLocales" :value="localeOption">
-      {{ localeOption }}
+      {{ t(`languages.${localeOption}`) }}
     </option>
   </select>
 </template>
