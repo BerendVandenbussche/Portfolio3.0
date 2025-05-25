@@ -10,7 +10,7 @@ const navigationItems = computed(() => getNavigationItems());
 </script>
 
 <template>
-  <div class="fixed flex flex-col top-0 left-0 h-screen w-[70%] bg-dark z-10">
+  <div class="fixed flex flex-col top-0 left-0 h-[100svh] w-[70%] bg-dark z-10">
     <div class="pt-2 pb-4 px-4 cursor-pointer" @click="toggleMobileMenu()">
       <Logo />
     </div>
