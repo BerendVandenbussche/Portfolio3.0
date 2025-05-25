@@ -9,7 +9,7 @@ const navigationItems = ["Home", "About", "Skills", "Homelab"];
 </script>
 
 <template>
-  <div class="bg-dark text-text">
+  <div class="bg-darkest text-text">
     <header class="fixed top-0 bg-darkest-see-trough w-full">
       <nav class="flex justify-center items-center p-4">
         <div
