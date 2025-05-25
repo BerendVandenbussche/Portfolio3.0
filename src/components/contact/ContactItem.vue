@@ -1,15 +1,18 @@
 <script setup lang="ts">
 defineProps({
   iconName: String,
+  link: String,
 });
 </script>
 
 <template>
-  <button
+  <a
+    :href="link"
+    target="_blank"
     class="flex justify-center items-center mx-2 bg-theme h-12 w-12 rounded-full cursor-pointer"
   >
     <vue-feather :type="iconName" stroke="#fff" />
-  </button>
+  </a>
 </template>
 
 <style scoped></style>

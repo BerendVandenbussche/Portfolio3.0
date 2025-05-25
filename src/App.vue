@@ -18,7 +18,7 @@ const navigationItems = computed(() => getNavigationItems());
 
 <template>
   <div class="bg-darkest text-text">
-    <header class="fixed top-0 bg-darkest-see-trough w-full">
+    <header class="fixed top-0 bg-darkest-see-trough w-full z-10">
       <nav class="flex justify-between md:justify-center items-center p-4">
         <Logo />
         <ul class="hidden md:flex justify-center">
@@ -32,7 +32,7 @@ const navigationItems = computed(() => getNavigationItems());
           class="cursor-pointer p-4 md:hidden"
           @click="toggleMobileMenu()"
         >
-          <vue-feather type="menu" stroke="#fff" />
+          <vue-feather type="menu" class="stroke-text" />
         </button>
       </nav>
     </header>
@@ -62,10 +62,22 @@ const navigationItems = computed(() => getNavigationItems());
       </template>
     </portfolio-section>
     <footer class="flex justify-center p-2">
-      <contact-item icon-name="mail" />
-      <contact-item icon-name="linkedin" />
-      <contact-item icon-name="facebook" />
-      <contact-item icon-name="github" />
+      <contact-item
+        icon-name="mail"
+        link="mailto:contact@berendvandenbussche.be"
+      />
+      <contact-item
+        icon-name="linkedin"
+        link="https://www.linkedin.com/in/berend-vandenbussche-43b19b184/"
+      />
+      <contact-item
+        icon-name="facebook"
+        link="https://www.facebook.com/berend.vandenbussche"
+      />
+      <contact-item
+        icon-name="github"
+        link="https://github.com/BerendVandenbussche"
+      />
     </footer>
   </div>
 </template>
