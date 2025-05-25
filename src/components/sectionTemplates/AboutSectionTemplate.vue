@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2">
+  <div class="grid grid-cols-1 md:grid-cols-2 md:gap-24">
     <div>
       <h1 class="text-theme">About me</h1>
       <div class="p-2">

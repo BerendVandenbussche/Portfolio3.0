@@ -13,6 +13,7 @@
 
     --color-darkest-see-trough: rgba(18, 18, 18, 0.9);
     --color-lightest-see-trough: rgba(255, 255, 255, 0.9);
+    --color-theme-see-trough: rgba(28, 116, 252, 0.9);
 }
 
 @layer base {
@@ -22,6 +23,11 @@
     }
 
     h2 {
+        font-size: var(--text-2xl);
+        font-weight: var(--font-weight-bold)
+    }
+
+    h3 {
         font-size: var(--text-xl);
         font-weight: var(--font-weight-bold)
     }

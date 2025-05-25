@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { BubbleUi } from "vue-bubble-ui";
+import ProjectItem from "@/components/projects/ProjectItem.vue";
 
 const options = {
   size: 200,
   minSize: 75,
   gutter: 14,
-  numCols: 6,
+  numCols: 4,
   fringeWidth: 200,
   yRadius: 200,
   xRadius: 200,
@@ -71,9 +72,9 @@ const technologies = [
 
 <template>
   <div>
-    <h1 class="text-theme">Skills & projects</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2">
-      <div class="w-full h-screen">
+    <h1 class="text-theme pb-4">Skills & projects</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-24">
+      <div class="w-full pb-4 h-[50vh] md:h-screen">
         <bubble-ui :items="technologies" :options="options">
           <template #item="{ item, bubble }">
             <div
@@ -96,7 +97,11 @@ const technologies = [
           </template>
         </bubble-ui>
       </div>
-      <div></div>
+      <ProjectItem
+        project-name="Elody"
+        project-image="/images/projects/elody.svg"
+        project-url="https://elody.eu"
+      />
     </div>
   </div>
 </template>
@@ -132,13 +137,6 @@ const technologies = [
   margin: 0 0 6px 0;
   font-weight: 1000;
   max-width: 150px;
-}
-
-.technologySymbol {
-  font-size: 14pt;
-  margin: 0 0 5px 0;
-  max-width: 100px;
-  opacity: 0.5;
 }
 
 img {
