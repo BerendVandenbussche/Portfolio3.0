@@ -1,11 +1,11 @@
-<script setup lang="ts">
+<script setup>
 import { useI18n } from "vue-i18n";
 import { computed } from "vue";
 
 const { t } = useI18n();
 
 const currentAge = computed(
-  () => new Date().getFullYear() - new Date("02/28/2000").getFullYear(),
+  () => new Date().getFullYear() - new Date("02/28/2000").getFullYear()
 );
 </script>
 

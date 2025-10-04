@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { computed } from "vue";
 import { useNavigation } from "@/composables/useNavigation";
 import MenuItem from "@/components/menu/MenuItem.vue";

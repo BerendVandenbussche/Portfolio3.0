@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { BubbleUi } from "vue-bubble-ui";
 import ProjectItem from "@/components/projects/ProjectItem.vue";
 

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { useI18n } from "vue-i18n";
 import { onMounted, watch } from "vue";
 import { useBrowserStorage } from "@/composables/useBrowserStorage";
@@ -18,7 +18,7 @@ watch(
   () => {
     setStorageItem("preferredLanguage", locale.value);
     if (isMobileMenuOpen.value) toggleMobileMenu();
-  },
+  }
 );
 </script>
 
