@@ -60,7 +60,7 @@ const homelabSoftware = [
       </div>
 
       <div
-        class="grid grid-cols-[50px_1fr] md:grid-cols-[100px_1fr] lg:grid-cols-[200px_1fr] border-solid border-2 border-light w-[60vw] md:max-w-[700px] h-[50vh] rounded-4xl"
+        class="grid grid-cols-[50px_1fr] md:grid-cols-[100px_1fr] lg:grid-cols-[200px_1fr] border-solid border-2 w-[60vw] md:max-w-[700px] h-[50vh] rounded-4xl"
       >
         <div class="flex flex-row justify-center items-center -rotate-90">
           <img
@@ -74,7 +74,7 @@ const homelabSoftware = [
           class="flex justify-center items-center max-h-full overflow-y-auto"
         >
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[90%] max-h-[90%] border-solid border-2 border-light rounded-4xl p-4 gap-4 overflow-y-scroll"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[90%] max-h-[90%] border-solid border-2 rounded-4xl p-4 gap-4 overflow-y-scroll"
           >
             <div
               v-for="software in homelabSoftware"
