@@ -13,8 +13,8 @@ const homelabSoftware = [
     icon: "/images/homelab/immich.svg",
   },
   {
-    name: "Ngnix",
-    icon: "/images/homelab/ngnix.svg",
+    name: "Nginx",
+    icon: "/images/homelab/nginx.svg",
   },
   {
     name: "Apache",
@@ -26,7 +26,7 @@ const homelabSoftware = [
   },
   {
     name: "Cloudflare DDNS",
-    icon: "/images/homelab/cloudflareDdns.svg",
+    icon: "/images/homelab/cloudflare.svg",
   },
   {
     name: "Matter server",
@@ -35,6 +35,10 @@ const homelabSoftware = [
   {
     name: "Mosquitto MQTT",
     icon: "/images/homelab/mosquitto.svg",
+  },
+  {
+    name: "Zigbee2MQTT",
+    icon: "/images/homelab/zigbee2mqtt.svg",
   },
 ];
 </script>
@@ -56,7 +60,7 @@ const homelabSoftware = [
       </div>
 
       <div
-        class="grid grid-cols-[100px_1fr] md:grid-cols-[200px_1fr] border-solid border-2 border-light w-[60vw] md:max-w-[700px] h-[50vh] rounded-4xl"
+        class="grid grid-cols-[50px_1fr] md:grid-cols-[100px_1fr] lg:grid-cols-[200px_1fr] border-solid border-2 border-light w-[60vw] md:max-w-[700px] h-[50vh] rounded-4xl"
       >
         <div class="flex flex-row justify-center items-center -rotate-90">
           <img
@@ -66,15 +70,24 @@ const homelabSoftware = [
           />
           <h3>Docker</h3>
         </div>
-        <div class="flex justify-center items-center">
+        <div
+          class="flex justify-center items-center max-h-full overflow-y-auto"
+        >
           <div
-            class="grid grid-cols-3 w-[90%] h-[80%] border-solid border-2 border-light rounded-4xl p-4 gap-4 overflow-y-auto"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[90%] max-h-[90%] border-solid border-2 border-light rounded-4xl p-4 gap-4 overflow-y-scroll"
           >
             <div
               v-for="software in homelabSoftware"
-              class="border-solid border-2 p-2 rounded-xl"
+              class="border-solid border-2 p-2 rounded-xl hover:border-theme"
             >
-              <h4>{{ software.name }}</h4>
+              <h4 class="pb-2">{{ software.name }}</h4>
+              <div class="flex justify-center items-center">
+                <img
+                  :src="software.icon"
+                  :alt="`${software.name} logo`"
+                  class="h-10"
+                />
+              </div>
             </div>
           </div>
         </div>
