@@ -97,12 +97,20 @@ const technologies = [
           </template>
         </bubble-ui>
       </div>
+      <div class="max-w-full md:max-w-[60%] h-fit flex flex-col gap-y-6"> 
       <ProjectItem
         project-name="Elody"
         project-image="/images/projects/elody.svg"
         project-url="https://elody.eu"
         github-url="https://github.com/inuits/elody-pwa"
       />
+      <ProjectItem
+        project-name="Photrail"
+        project-image="/images/projects/photrail.svg"
+        project-url="https://photrail.berendvandenbussche.be"
+        github-url="https://github.com/BerendVandenbussche/Photrail"
+      />
+    </div>
     </div>
   </div>
 </template>

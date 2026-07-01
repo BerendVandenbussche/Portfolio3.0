@@ -16,7 +16,7 @@ const component = computed(() => {
 
 <template>
   <component
-    class="max-w-full md:max-w-[60%] bg-dark h-fit rounded-3xl"
+    class="bg-dark rounded-3xl"
     :is="component"
     :href="projectUrl"
     target="_blank"
